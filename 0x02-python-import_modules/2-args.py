@@ -10,5 +10,4 @@ if __name__ == "__main__":
         print(f"{(len(sys.argv) - 1)} arguments:")
         for i, arg in enumerate(sys.argv):
             if i != 0:
-                print(f"{i}: {arg}")
-        
+                print(f"{i}: {arg}")        
