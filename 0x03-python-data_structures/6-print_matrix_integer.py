@@ -3,11 +3,11 @@ def print_matrix_integer(matrix=[[]]):
     if matrix:
         c = ''
         for row in matrix:
-            for i in row:
-                if row[0] == i:
-                    c = str(i)
+            for column in row:
+                if column == row[-1]:
+                    print('{:d}'.format(column), end='')
                 else:
-                    c = c + ' ' + str(i)
-            print(c)
-            c = ''
+                    print('{:d}'.format(column), end=' ')
+            print()
+            
             
