@@ -1,0 +1,7 @@
+#!/usr/bin/python3
+def no_c(my_string):
+    s = list(my_string)
+    for i in range(0, len(s), 1):
+        if s[i] == 'C' or s[i] == 'c':
+            s[i] = ''
+    return (''.join(s))
