@@ -4,8 +4,8 @@ def safe_print_list(my_list=[], x=0):
     for i in range(x):
         try:
             print(f"{my_list[i]}", end="")
-            total = total + 1
+            sum = sum + 1
         except IndexError:
             break
     print()
-    return(total)
+    return(sum)
